@@ -6,6 +6,13 @@ const Hero = () => {
     }
   }
 
+  const scrollToConsultation = () => {
+    const element = document.getElementById('cta')
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <section className="pt-32 pb-20 relative overflow-hidden">
       {/* Background Gradient Blobs */}
@@ -55,7 +62,7 @@ const Hero = () => {
               Start Your Journey
             </button>
             <button 
-              onClick={() => window.open('#', '_blank')}
+              onClick={scrollToConsultation}
               className="btn-secondary text-lg px-10 py-4"
             >
               Free Consultation
