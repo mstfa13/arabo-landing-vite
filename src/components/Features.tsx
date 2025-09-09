@@ -113,7 +113,7 @@ const Features = () => {
                 { step: "02", title: "Foundation", desc: "Build core Arabic grammar and vocabulary" },
                 { step: "03", title: "Application", desc: "Practice with Quranic and Islamic texts" },
                 { step: "04", title: "Mastery", desc: "Advanced study of classical literature" }
-              ].map((item, index) => (
+              ].map((item) => (
                 <div key={item.step} className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-islamic-500 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                     {item.step}

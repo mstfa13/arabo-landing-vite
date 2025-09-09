@@ -1,4 +1,3 @@
-import { useState } from 'react'
 
 interface Package {
   name: string
@@ -13,8 +12,6 @@ interface Package {
 }
 
 const Packages = () => {
-  const [selectedPackage, setSelectedPackage] = useState<string | null>(null)
-
   const packages: Package[] = [
     {
       name: "Foundation",
@@ -78,7 +75,6 @@ const Packages = () => {
   ]
 
   const handleSelectPackage = (packageName: string) => {
-    setSelectedPackage(packageName)
     // Here you would integrate with payment processor
     console.log(`Selected package: ${packageName}`)
     // For demo purposes, scroll to CTA section

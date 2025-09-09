@@ -31,7 +31,7 @@ const CallToAction = () => {
       }
 
       // Send to Google Sheets via Apps Script
-      const response = await fetch(import.meta.env.VITE_GOOGLE_SHEETS_URL || '', {
+      await fetch((import.meta as any).env.VITE_GOOGLE_SHEETS_URL || '', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
